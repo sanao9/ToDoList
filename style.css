@@ -1,0 +1,91 @@
+body {
+    background-color: #b5b9bd; /* Light background for a fresh look */
+    font-family: 'Arial', sans-serif; /* Smooth font for better readability */
+    color: #333; /* Darker text for contrast */
+}
+
+.container {
+    max-width: 800px; /* Limit container width */
+    background-color: #333;
+    align-items: center;
+    margin: auto; /* Center the container */
+    padding: 20px; /* Add padding around the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1 {
+    font-size: 2.5rem; /* Larger font size for the heading */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 20px; /* Space below the heading */
+    color: #0a76eb; /* Blue color for the heading */
+}
+
+.input-group {
+    margin-bottom: 20px; /* Space below the input group */
+}
+
+.task-item {
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation for scaling and shadow */
+}
+
+.task-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #6c757d; /* Muted text color for completed tasks */
+}
+
+.card {
+    border-radius: 10px; /* Rounded corners for cards */
+    border: 1px solid #007bff; /* Border color for cards */
+}
+
+.card-body {
+    padding: 15px; /* Padding inside the card */
+}
+
+.btn-success {
+    background-color: #28a745; /* Green button */
+    border: none; /* Remove border */
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Red button */
+    border: none; /* Remove border */
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* Grey button */
+    border: none; /* Remove border */
+}
+
+.spinner-border {
+    display: none; /* Initially hidden */
+}
+
+.alert {
+    display: none; /* Initially hidden */
+    margin-top: 20px; /* Space above the alert */
+}
+.completed {
+    color: #6c757d; /* Muted text color for completed tasks */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* Reduced padding on smaller screens */
+    }
+
+    h1 {
+        font-size: 2rem; /* Smaller heading size on mobile */
+    }
+
+    .task-item {
+        margin-bottom: 15px; /* Space below task items */
+    }
+}
